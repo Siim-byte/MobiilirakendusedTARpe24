@@ -67,12 +67,12 @@ public partial class VarviPage : ContentPage
 		stepper = new Stepper
 		{
 			Minimum = 0,
-			Maximum = 50,
-			Increment = 5,
+			Maximum = 120,
+			Increment = 10,
 			Value = 0,
         };
 		stepper.ValueChanged += OnColorChanged;
-		AbsoluteLayout.SetLayoutBounds(stepper, new Rect(0.5, 0.45, -1, -1));
+		AbsoluteLayout.SetLayoutBounds(stepper, new Rect(0.5, 0.9, -1, -1));
 		AbsoluteLayout.SetLayoutFlags(stepper, AbsoluteLayoutFlags.PositionProportional);
 		al.Children.Add(stepper);
 

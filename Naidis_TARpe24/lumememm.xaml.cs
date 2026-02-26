@@ -44,8 +44,8 @@ public partial class lumememm : ContentPage
         ämber = new Frame
         {
             WidthRequest = 60,
-            HeightRequest = 30,
-            BackgroundColor = Colors.Gray,
+            HeightRequest = 40,
+            BackgroundColor = Colors.White,
             BorderColor = Colors.Gray,
             CornerRadius = 0
         };
@@ -62,7 +62,7 @@ public partial class lumememm : ContentPage
         AbsoluteLayout.SetLayoutBounds(tegevusPicker, new Rect(0.5, 0.8, 200, -1));
         AbsoluteLayout.SetLayoutFlags(tegevusPicker, AbsoluteLayoutFlags.PositionProportional);
         al.Children.Add(tegevusPicker);
-
+        
         tegevusButton = new Button
         {
             Text = "Käivita tegevus"
@@ -126,6 +126,7 @@ public partial class lumememm : ContentPage
                 Color randomColor = Color.FromRgb(rnd.Next(256), rnd.Next(256), rnd.Next(256));
                 pea.Fill = randomColor;
                 keha.Fill = randomColor;
+                ämber.BackgroundColor = randomColor;
                 break;
 
             case "Sulata":
